@@ -347,8 +347,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </a>
           </div>
           <div className="mt-8 border-t pt-8 text-center">
-            <p>&copy; {new Date().getFullYear()} Velemegna Society. All rights reserved.</p>
-          </div>
+  <p>&copy; {new Date().getFullYear()} Velemegna Society. All rights reserved.</p>
+  <p className="mt-2 text-sm">
+    Created with ❤️ by{" "}
+    <a
+      href="https://wa.me/919110886128?text=We%20need%20a%20software%20solution%20for%20our%20business"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline"
+    >
+      Starset Consultancy Services
+    </a>
+  </p>
+</div>
         </div>
       </footer>
       <ScrollToTop />
