@@ -327,13 +327,14 @@ export default function About() {
         viewport={{ once: true }}
         className="rounded-lg overflow-hidden shadow-lg bg-white p-6 text-center"
       >
-        <div className="relative w-full mb-4 overflow-hidden rounded-lg" style={{ paddingTop: '100%' }}>
-          <img
-            src={member.image}
-            alt={member.name}
-            className="absolute top-0 left-0 w-100% h-100% object-cover object-center hover:scale-105 transition-transform duration-300"
-          />
-        </div>
+<div className="w-full aspect-square mb-4 overflow-hidden rounded-lg relative">
+  <img
+    src={member.image}
+    alt={member.name}
+    className="absolute top-0 left-0 w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+  />
+</div>
+
         <h3 className="text-xl font-bold text-primary">{member.name}</h3>
         <p className="text-sm text-primary/80 font-medium">{member.position}</p>
         <p className="mt-2 text-muted-foreground text-sm">{member.description}</p>
