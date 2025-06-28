@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  @apply bg-background text-foreground;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Custom Theme Colors */
+:root {
+  /* Primary Colors */
+  --primary-light-blue: 201 100% 50%; /* #00A3FF */
+  --primary-blue: 201 100% 35%;      /* #0072B3 */
+  --primary-dark-blue: 201 100% 20%; /* #004166 */
+  
+  /* Accent Colors */
+  --accent-red: 0 100% 40%;         /* #CC0000 */
+  --accent-red-light: 0 100% 60%;   /* #FF1A1A */
+  --accent-blue: 200 100% 40%;         /* Light Blue */
+  --accent-blue-light: 200 100% 60%;   /* Lighter Blue */
+
+  
+  /* Base Colors */
+  --white: 0 0% 100%;               /* #FFFFFF */
+  --off-white: 210 40% 98%;         /* #FAFBFC */
+  --gray-50: 210 40% 96%;           /* #F0F4F8 */
+  --gray-100: 210 40% 90%;          /* #E1E8F0 */
+  
+  /* Background Colors */
+  --bg-primary-light: 201 100% 97%; /* Light blue background */
+  --bg-secondary: 0 100% 97%;       /* Light red background */
+
+  /* Theme Mapping */
+  --background: var(--white);
+  --foreground: 210 40% 20%;
+  --card: var(--white);
+  --card-foreground: 210 40% 20%;
+  --popover: var(--white);
+  --popover-foreground: 210 40% 20%;
+  --primary: var(--primary-blue);
+  --primary-foreground: var(--white);
+  --secondary: var(--gray-50);
+  --secondary-foreground: var(--primary-dark-blue);
+  --muted: var(--gray-50);
+  --muted-foreground: 210 40% 40%;
+  --accent: var(--accent-blue);
+  --accent-foreground: var(--white);
+  --destructive: var(--accent-blue);
+  --destructive-foreground: var(--white);
+  --border: var(--gray-100);
+  --input: var(--gray-100);
+  --ring: var(--primary-blue);
+
+  /* Chart Colors */
+  --chart-1: var(--primary-light-blue);
+  --chart-2: var(--primary-blue);
+  --chart-3: var(--primary-dark-blue);
+  --chart-4: var(--accent-blue);
+  --chart-5: var(--accent-blue-light);
+}
+
+.dark {
+  --background: 210 40% 4%;
+  --foreground: 210 40% 98%;
+  --card: 210 40% 8%;
+  --card-foreground: 210 40% 98%;
+  --popover: 210 40% 8%;
+  --popover-foreground: 210 40% 98%;
+  --primary: var(--primary-light-blue);
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 12%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 210 40% 12%;
+  --muted-foreground: 210 40% 60%;
+  --accent: var(--accent-blue-light);
+  --accent-foreground: 210 40% 98%;
+  --destructive: var(--accent-blue);
+  --destructive-foreground: 210 40% 98%;
+  --border: 210 40% 12%;
+  --input: 210 40% 12%;
+  --ring: var(--primary-light-blue);
+}
+
+/* Mobile Navigation Menu Fix */
+@media (max-width: 768px) {
+  .navigation-menu-content {
+    width: 100% !important;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+}
+.perspective {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 640px) {
+  iframe {
+    height: 400px !important;
+  }
+  .text-lg {
+    font-size: 0.875rem; /* Adjusted font size for mobile */
+  }
+  .p-6 {
+    padding: 1rem; /* Reduce padding for cards */
+  }
+}
+.nav-link:hover {
+  color: hsl(var(--primary-light-blue)); /* Light blue color defined in your variables */
+}
+/* Optional CSS for line-clamping */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
