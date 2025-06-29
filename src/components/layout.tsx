@@ -305,7 +305,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <h3 className="text-lg font-semibold">Quick Links</h3>
               <ul className="mt-2 space-y-2">
                 <li><Link to="/about">About Us</Link></li>
-                <li><Link to="/services">Services</Link></li>
+                <li><Link to="/donate">Donate</Link></li>
                 <li><Link to="/gallery">Gallery</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
               </ul>
