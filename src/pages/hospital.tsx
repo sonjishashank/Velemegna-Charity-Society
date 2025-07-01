@@ -115,7 +115,7 @@ const doctors = [
   },
   {
     name: "Dr. K Mukta Bai D",
-    image: "/Velemegna Update/DR. Dr K Mukta Bai D.jpeg",
+    image: "/Velemegna Update/Dr K Mukta Bai D.jpeg",
     specialization: "MBBS MS ophthalmology"
   }
 ];
