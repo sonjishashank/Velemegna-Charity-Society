@@ -112,6 +112,11 @@ const doctors = [
     name: "Dr. Humera",
     image: "/Velemegna Update/DR. Humera.jpeg",
     specialization: "DODNB(Ophthalmologist)"
+  },
+  {
+    name: "Dr. K Mukta Bai D",
+    image: "/Velemegna Update/DR. Dr K Mukta Bai D.jpeg",
+    specialization: "MBBS MS ophthalmology"
   }
 ];
 
