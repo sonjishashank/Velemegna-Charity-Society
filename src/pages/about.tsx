@@ -136,6 +136,12 @@ const boardMembers = [
     image: '/newsletters/john.png' 
   },
   { 
+    name: 'Mr. Kartikeya Mitra', 
+    position: 'Member', 
+    description: 'MBA', 
+    image: '/newsletters/Kartikeya.png' 
+  },
+  { 
     name: 'Mr. Philemon Raj Prasad', 
     position: 'Administrator', 
     description: 'B.Ed. M.A, Administrator', 
@@ -314,7 +320,7 @@ export default function About() {
     </section>
 <section className="container">
   <h2 className="text-3xl font-bold text-center mb-12">
-    General Board Members
+    Governing Board Members
   </h2>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -343,7 +349,7 @@ export default function About() {
   </div>
 </section>
 <section className="container">
-        {/* <h2 className="text-3xl font-bold text-center mb-12">General Board Members</h2> */}
+        <h2 className="text-3xl font-bold text-center mb-12">General Board Members</h2>
         <BoardMemberSlider members={boardMembers} />
       </section>
     </div>
