@@ -349,7 +349,7 @@ export default function About() {
   </div>
 </section>
 <section className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">General Board Members</h2>
+        {/* <h2 className="text-3xl font-bold text-center mb-12">General Board Members</h2> */}
         <BoardMemberSlider members={boardMembers} />
       </section>
     </div>
